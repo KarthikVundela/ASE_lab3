@@ -9,9 +9,9 @@
         
         
         $scope.match = function () {
-            if ($scope.reg_Pwd != null && $scope.reg_Pwd != "" && $scope.reg_Cnf_Pwd != null && $scope.reg_Cnf_Pwd != "") {
+            if ($scope.register_Pwd != null  && $scope.Cnf_Pwd != null ) {
                 
-                if ($scope.reg_Pwd == $scope.reg_Cnf_Pwd) {
+                if ($scope.register_Pwd == $scope.Cnf_Pwd) {
                     $scope.show = false;
                 }
                 
@@ -25,9 +25,9 @@
         $scope.reg = function () {
             
             var user = document.getElementById("reg_Email_id").value;
-            var u_pwd = document.getElementById("reg_Pwd").value;
+            var pwd = document.getElementById("reg_Pwd").value;
             if (typeof(Storage) != "undefined") {
-                localStorage.setItem(user, u_pwd);
+                localStorage.setItem(user, pwd);
                 alert("User registered successfully");
                 $location.path('/');
                
