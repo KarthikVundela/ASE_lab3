@@ -7,7 +7,7 @@
         
         
         $scope.check = function () {
-            if ($scope.Email_id != null && $scope.Email_id != "" && $scope.Password != null && $scope.Password != "") {
+            if ($scope.Email_id != null  && $scope.Password != null ) {
                 
             var id = localStorage.getItem($scope.Email_id);
            
